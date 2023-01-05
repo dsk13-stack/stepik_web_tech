@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir -p ~/web/{public,uploads,etc}&&mkdir ~/web/public/{img,css,js}
 cp hello.py ~/web/hello.py
 cp nginx.conf ~/web/etc/nginx.conf
