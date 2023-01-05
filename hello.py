@@ -1,4 +1,4 @@
-def wsgi_app(environ=dict, start_response=callable) -> str:
+def wcgi_app(environ=dict, start_response=callable) -> str:
     response = "\n".join(environ["QUERY_STRING"].strip().split("&"))
     status = "200 OK"
     response_headers = [("Content-type", "text/plain"), ("Content-length", str(len(response)))]
