@@ -4,7 +4,7 @@ mkdir -p ~/web/{public,uploads,etc} && mkdir ~/web/public/{img,css,js} && mkdir 
 && cp nginx.conf ~/web/etc/nginx.conf \
 && rm -r /etc/nginx/sites-enabled/default \
 && ln -s ~/web/etc/nginx.conf /etc/nginx/sites-enabled/nginx.conf \
-&& nginx -t && /etc/init.d/nginx restart \
+&& nginx -t && /etc/init.d/nginx restart 
 django-admin startproject ask ~/web/ask
 ~/web/ask/manage.py startapp qa
 rm -r ~/web/ask/qa/views.py
