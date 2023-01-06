@@ -4,3 +4,6 @@ def wcgi_app(environ=dict, start_response=callable) -> str:
     response_headers = [("Content-type", "text/plain"), ("Content-length", str(len(response)))]
     start_response(status, response_headers)
     return response
+
+if __name__ == "__main__":
+    print("wcgi app")
